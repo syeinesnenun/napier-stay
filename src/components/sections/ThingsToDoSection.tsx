@@ -1,0 +1,43 @@
+import { activities } from "@/data/activities";
+import { ActivityCard } from "@/components/ui/ActivityCard";
+import { FadeIn } from "@/components/ui/FadeIn";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+
+export function ThingsToDoSection() {
+  return (
+    <section
+      id="things-to-do"
+      aria-labelledby="things-to-do-heading"
+      className="px-4 py-16 md:px-6 md:py-24"
+    >
+      <div className="mx-auto max-w-7xl">
+        <FadeIn>
+          <SectionHeading
+            id="things-to-do-heading"
+            title="할 거리"
+            subtitle="네이피어에서 어린이와 함께하기 좋은 활동"
+          />
+        </FadeIn>
+
+        <FadeIn delay={100}>
+          <p className="mx-auto mb-12 max-w-3xl text-center text-deep-teal/80">
+            숙소 주변에서 아이와 함께 즐길 수 있는 곳을 소개합니다.
+          </p>
+        </FadeIn>
+
+        <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
+          {activities.map((activity, index) => (
+            <FadeIn key={activity.id} delay={index * 60}>
+              <ActivityCard
+                title={activity.title}
+                description={activity.description}
+                alt={activity.alt}
+                src={activity.src}
+              />
+            </FadeIn>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
