@@ -40,7 +40,7 @@ export function Header() {
       >
         <a
           href="#home"
-          className="font-headline text-lg tracking-[0.2em] text-ivory uppercase"
+          className="font-headline text-lg tracking-[0.15em] text-ivory"
           onClick={() => setMenuOpen(false)}
         >
           {siteConfig.name}

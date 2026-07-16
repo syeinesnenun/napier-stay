@@ -7,6 +7,7 @@ import { HostSection } from "@/components/sections/HostSection";
 import { PriceSection } from "@/components/sections/PriceSection";
 import { RoomSection } from "@/components/sections/RoomSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
+import { MomActivitiesSection } from "@/components/sections/MomActivitiesSection";
 import { ThingsToDoSection } from "@/components/sections/ThingsToDoSection";
 
 export default function Home() {
@@ -21,6 +22,8 @@ export default function Home() {
       <AreaSection />
       <ChevronDivider />
       <ThingsToDoSection />
+      <ChevronDivider />
+      <MomActivitiesSection />
       <ChevronDivider />
       <ServicesSection />
       <ChevronDivider />
