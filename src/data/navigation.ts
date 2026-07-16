@@ -4,15 +4,15 @@ export type NavItem = {
 };
 
 export const navigation: NavItem[] = [
-  { label: "Home", href: "#home" },
-  { label: "Host", href: "#host" },
-  { label: "Room", href: "#room" },
-  { label: "Area", href: "#area" },
+  { label: "홈", href: "#home" },
+  { label: "호스트", href: "#host" },
+  { label: "방", href: "#room" },
+  { label: "네이피어", href: "#area" },
   { label: "할 거리", href: "#things-to-do" },
-  { label: "Services", href: "#services" },
-  { label: "Price", href: "#price" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Contact", href: "#contact" },
+  { label: "서비스", href: "#services" },
+  { label: "요금", href: "#price" },
+  { label: "자주 묻는 질문", href: "#faq" },
+  { label: "문의", href: "#contact" },
 ];
 
 export const sectionIds = navigation.map((item) => item.href.slice(1));
