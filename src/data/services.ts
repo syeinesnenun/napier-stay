@@ -34,7 +34,7 @@ export const services: Service[] = [
 ];
 
 export const priceIncludes: string[] = [
-  "개인 침실 및 개인 화장실",
+  "개인 침실, 화장실, 샤워실 (본인 전용)",
   "주방·거실 공용 공간",
   "매일 조식",
   "학교 등하교 픽업·드랍",

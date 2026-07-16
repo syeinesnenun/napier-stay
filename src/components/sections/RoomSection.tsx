@@ -21,8 +21,8 @@ export function RoomSection() {
 
         <FadeIn delay={100}>
           <div className="mb-10 space-y-3 text-center text-deep-teal/80">
-            <p>개인 침실 1개 + 개인 화장실</p>
-            <p>주방 · 거실 공용</p>
+            <p>개인 침실, 화장실, 샤워실 (본인 전용)</p>
+            <p>주방 · 거실 공용 (윗층)</p>
             <p className="font-headline text-sm tracking-wide text-gold uppercase">
               최소 · 최대 체류 4주
             </p>
