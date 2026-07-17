@@ -31,14 +31,13 @@ export function HostSection() {
           <FadeIn delay={200}>
             <div className="space-y-4 text-deep-teal/85">
               <p className="text-lg leading-relaxed">
-                저널리즘을 전공했고, 4개국에서 생활한 경험이 있습니다. 현재
-                네이피어에서 4년째 거주하며 한국어로 편하게 소통할 수
-                있습니다.
+                저널리즘을 전공했고, 해외 경험 26년 차입니다. 현재 뉴질랜드
+                11년차에 거주 중이며 한국어로 편하게 소통할 수 있습니다.
               </p>
               <ul className="space-y-2 text-sm md:text-base">
                 <li>· 저널리즘 전공</li>
-                <li>· 4개국 거주 경험</li>
-                <li>· 네이피어 4년 거주</li>
+                <li>· 해외 경험 26년</li>
+                <li>· 뉴질랜드 11년 거주</li>
                 <li>· 한국어 가능</li>
               </ul>
               <p className="text-sm text-deep-teal/60">
