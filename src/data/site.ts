@@ -6,8 +6,8 @@ export const siteConfig = {
   contactEmail: "syeinsnenun@gmail.com",
   kakaoOpenChatUrl: "#",
   price: {
-    regularFourWeeks: 800,
-    fourWeeks: 600,
+    regularWeekly: 800,
+    weekly: 600,
     currency: "NZD",
     /** 대략적인 NZD→KRW 환율 (필요 시 수정) */
     nzdToKrwRate: 850,
