@@ -32,7 +32,7 @@ export default function RootLayout({
       lang="ko"
       className={`${gowunBatang.variable} ${notoSans.variable} h-full scroll-smooth antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-ivory font-body text-deep-teal">
+      <body className="flex min-h-full flex-col font-body text-deep-teal">
         <Header />
         {children}
         <Footer />

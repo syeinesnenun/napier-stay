@@ -33,7 +33,7 @@ export function Header() {
   }, [menuOpen]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-olive/10 bg-cream/90 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 border-b border-olive/15 bg-orange-wash/90 backdrop-blur-sm">
       <div
         ref={menuRef}
         className="relative mx-auto flex max-w-6xl items-center justify-between px-4 py-4 md:px-6"

@@ -8,7 +8,7 @@ export function MomActivitiesSection() {
     <section
       id="mom-activities"
       aria-labelledby="mom-activities-heading"
-      className="px-4 py-16 md:px-6 md:py-24"
+      className="bg-orange-wash px-4 py-16 md:px-6 md:py-24"
     >
       <div className="mx-auto max-w-7xl">
         <FadeIn>

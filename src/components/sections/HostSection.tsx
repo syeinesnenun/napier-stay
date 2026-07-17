@@ -7,7 +7,7 @@ export function HostSection() {
     <section
       id="host"
       aria-labelledby="host-heading"
-      className="px-4 py-16 md:px-6 md:py-24"
+      className="bg-orange-wash px-4 py-16 md:px-6 md:py-24"
     >
       <div className="mx-auto max-w-6xl">
         <FadeIn>

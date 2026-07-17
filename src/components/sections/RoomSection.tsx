@@ -8,7 +8,7 @@ export function RoomSection() {
     <section
       id="room"
       aria-labelledby="room-heading"
-      className="bg-lavender-soft/25 px-4 py-16 md:px-6 md:py-24"
+      className="bg-olive-wash px-4 py-16 md:px-6 md:py-24"
     >
       <div className="mx-auto max-w-6xl">
         <FadeIn>

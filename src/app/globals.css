@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #faf6f0;
+  --background: #e8e4d8;
   --foreground: #4a5240;
 }
 
@@ -18,6 +18,10 @@
   --color-burnt-orange: #c46a42;
   --color-lavender: #b8a4cc;
   --color-lavender-soft: #e8e0f0;
+  --color-orange-wash: #f0e0d2;
+  --color-olive-wash: #e2e9d8;
+  --color-orange-soft: #e8d4c4;
+  --color-olive-soft: #d4ddc8;
   --color-dark-teal: #4a5240;
   --color-warm-brown: #6b5344;
   --font-headline: var(--font-gowun);
@@ -35,9 +39,33 @@ html {
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
   font-family: var(--font-noto-sans), sans-serif;
+  background-color: #e6e2d6;
+  background-image:
+    radial-gradient(
+      ellipse 90% 60% at 10% 0%,
+      rgba(196, 106, 66, 0.22),
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse 85% 55% at 95% 100%,
+      rgba(90, 99, 71, 0.26),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse 70% 50% at 50% 45%,
+      rgba(196, 106, 66, 0.1),
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      #f2e4d8 0%,
+      #ebe3d6 35%,
+      #e4ead8 65%,
+      #e8dfd4 100%
+    );
+  background-attachment: fixed;
 }
 
 :focus-visible {

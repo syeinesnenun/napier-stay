@@ -8,7 +8,7 @@ export function ConcernsSection() {
     <section
       id="concerns"
       aria-labelledby="concerns-heading"
-      className="bg-lavender-soft/25 px-4 py-16 md:px-6 md:py-24"
+      className="bg-olive-wash px-4 py-16 md:px-6 md:py-24"
     >
       <div className="mx-auto max-w-[820px]">
         <FadeIn>

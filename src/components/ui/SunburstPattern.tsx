@@ -15,9 +15,9 @@ export function SunburstPattern({
       aria-hidden="true"
       style={{ opacity }}
     >
-      <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-lavender/25 blur-3xl" />
-      <div className="absolute -bottom-16 -left-16 h-64 w-64 rounded-full bg-burnt-orange/15 blur-3xl" />
-      <div className="absolute top-1/3 left-1/2 h-48 w-48 -translate-x-1/2 rounded-full bg-lavender-soft/40 blur-2xl" />
+      <div className="absolute -top-20 -right-20 h-80 w-80 rounded-full bg-burnt-orange/20 blur-3xl" />
+      <div className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-olive/25 blur-3xl" />
+      <div className="absolute top-1/2 left-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-orange-soft/50 blur-3xl" />
     </div>
   );
 }

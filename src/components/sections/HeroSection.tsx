@@ -8,11 +8,11 @@ export function HeroSection() {
     <section
       id="home"
       aria-labelledby="home-heading"
-      className="relative overflow-hidden px-4 py-20 md:px-6 md:py-28"
+      className="relative overflow-hidden bg-orange-wash px-4 py-20 md:px-6 md:py-28"
     >
       <SunburstPattern />
       <FadeIn className="relative mx-auto max-w-3xl text-center">
-        <p className="text-sm text-lavender">Napier, New Zealand</p>
+        <p className="text-sm text-olive-light">Napier, New Zealand</p>
         <div className="relative mx-auto mt-3 inline-block px-2">
           <ArtDecoHeroMotif className="absolute top-1/2 left-1/2 w-[min(100%,22rem)] -translate-x-1/2 -translate-y-[42%] opacity-[0.14] md:w-[26rem] md:opacity-[0.16]" />
           <h1
