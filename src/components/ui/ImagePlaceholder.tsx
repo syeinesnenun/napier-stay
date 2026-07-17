@@ -29,7 +29,7 @@ export function ImagePlaceholder({
     return (
       <div
         className={cn(
-          "relative overflow-hidden border border-gold/30",
+          "relative overflow-hidden rounded-xl border border-olive/10",
           aspectClasses[aspectRatio],
           className,
         )}
@@ -49,22 +49,14 @@ export function ImagePlaceholder({
   return (
     <div
       className={cn(
-        "relative flex items-center justify-center overflow-hidden border border-gold/40 bg-ivory",
+        "relative flex items-center justify-center overflow-hidden rounded-xl border border-olive/10 bg-lavender-soft/40",
         aspectClasses[aspectRatio],
         className,
       )}
       role="img"
       aria-label={alt}
     >
-      <div
-        className="pointer-events-none absolute inset-0 opacity-20"
-        aria-hidden="true"
-        style={{
-          backgroundImage:
-            "repeating-linear-gradient(45deg, #B08D3E 0, #B08D3E 1px, transparent 1px, transparent 12px)",
-        }}
-      />
-      <span className="relative z-10 font-headline text-sm tracking-[0.2em] text-deep-teal/70 uppercase">
+      <span className="relative z-10 text-sm text-deep-teal/60">
         {label ?? "Photo"}
       </span>
     </div>

@@ -1,20 +1,27 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f3ede0;
-  --foreground: #123e3a;
+  --background: #faf6f0;
+  --foreground: #4a5240;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-ivory: #f3ede0;
-  --color-deep-teal: #1c5b54;
-  --color-gold: #b08d3e;
-  --color-coral: #c1694f;
-  --color-dark-teal: #123e3a;
-  --font-headline: var(--font-cinzel);
-  --font-body: var(--font-jost);
+  --color-ivory: #faf6f0;
+  --color-cream: #fffbf6;
+  --color-deep-teal: #5a6347;
+  --color-olive: #5a6347;
+  --color-olive-light: #6b7458;
+  --color-gold: #c46a42;
+  --color-coral: #c46a42;
+  --color-burnt-orange: #c46a42;
+  --color-lavender: #b8a4cc;
+  --color-lavender-soft: #e8e0f0;
+  --color-dark-teal: #4a5240;
+  --color-warm-brown: #6b5344;
+  --font-headline: var(--font-gowun);
+  --font-body: var(--font-noto-sans);
 }
 
 html {
@@ -30,10 +37,10 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-jost), sans-serif;
+  font-family: var(--font-noto-sans), sans-serif;
 }
 
 :focus-visible {
-  outline: 2px solid #b08d3e;
+  outline: 2px solid #c46a42;
   outline-offset: 2px;
 }

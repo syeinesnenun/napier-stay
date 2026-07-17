@@ -10,10 +10,10 @@ type ButtonProps = {
 };
 
 const variants = {
-  primary: "bg-coral text-ivory hover:bg-coral/90",
-  secondary: "bg-deep-teal text-ivory hover:bg-deep-teal/90",
+  primary: "bg-burnt-orange text-cream hover:bg-burnt-orange/90",
+  secondary: "bg-olive text-cream hover:bg-olive/90",
   outline:
-    "border border-gold bg-transparent text-deep-teal hover:bg-gold/10",
+    "border border-olive/30 bg-cream text-deep-teal hover:border-burnt-orange/40 hover:bg-lavender-soft/30",
 };
 
 export function Button({
@@ -25,7 +25,7 @@ export function Button({
   onClick,
 }: ButtonProps) {
   const classes = cn(
-    "inline-flex items-center justify-center px-6 py-3 font-body text-sm tracking-wide transition-colors",
+    "inline-flex items-center justify-center rounded-full px-6 py-3 font-body text-sm transition-colors",
     variants[variant],
     className,
   );

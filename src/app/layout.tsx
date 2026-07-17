@@ -1,20 +1,20 @@
 import type { Metadata } from "next";
-import { Cinzel, Jost } from "next/font/google";
+import { Gowun_Batang, Noto_Sans_KR } from "next/font/google";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { siteConfig } from "@/data/site";
 import "./globals.css";
 
-const cinzel = Cinzel({
-  variable: "--font-cinzel",
+const gowunBatang = Gowun_Batang({
+  variable: "--font-gowun",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "700"],
 });
 
-const jost = Jost({
-  variable: "--font-jost",
+const notoSans = Noto_Sans_KR({
+  variable: "--font-noto-sans",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["400", "500", "700"],
 });
 
 export const metadata: Metadata = {
@@ -30,9 +30,9 @@ export default function RootLayout({
   return (
     <html
       lang="ko"
-      className={`${cinzel.variable} ${jost.variable} h-full scroll-smooth antialiased`}
+      className={`${gowunBatang.variable} ${notoSans.variable} h-full scroll-smooth antialiased`}
     >
-      <body className="flex min-h-full flex-col font-body text-deep-teal">
+      <body className="flex min-h-full flex-col bg-ivory font-body text-deep-teal">
         <Header />
         {children}
         <Footer />

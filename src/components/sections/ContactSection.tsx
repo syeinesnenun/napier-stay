@@ -38,7 +38,7 @@ export function ContactSection() {
                 name="name"
                 type="text"
                 required
-                className="w-full border border-gold/40 bg-ivory px-4 py-3 text-deep-teal outline-none focus:border-gold"
+                className="w-full rounded-xl border border-olive/15 bg-cream px-4 py-3 text-deep-teal outline-none focus:border-burnt-orange/40"
               />
             </div>
 
@@ -52,7 +52,7 @@ export function ContactSection() {
                 type="text"
                 required
                 placeholder="예: 2026년 8월, 4주"
-                className="w-full border border-gold/40 bg-ivory px-4 py-3 text-deep-teal outline-none focus:border-gold"
+                className="w-full rounded-xl border border-olive/15 bg-cream px-4 py-3 text-deep-teal outline-none focus:border-burnt-orange/40"
               />
             </div>
 
@@ -66,7 +66,7 @@ export function ContactSection() {
                 type="text"
                 required
                 placeholder="예: 엄마 1, 아이 1"
-                className="w-full border border-gold/40 bg-ivory px-4 py-3 text-deep-teal outline-none focus:border-gold"
+                className="w-full rounded-xl border border-olive/15 bg-cream px-4 py-3 text-deep-teal outline-none focus:border-burnt-orange/40"
               />
             </div>
 
@@ -79,7 +79,7 @@ export function ContactSection() {
                 name="email"
                 type="email"
                 required
-                className="w-full border border-gold/40 bg-ivory px-4 py-3 text-deep-teal outline-none focus:border-gold"
+                className="w-full rounded-xl border border-olive/15 bg-cream px-4 py-3 text-deep-teal outline-none focus:border-burnt-orange/40"
               />
             </div>
 
@@ -91,7 +91,7 @@ export function ContactSection() {
                 id="message"
                 name="message"
                 rows={5}
-                className="w-full resize-y border border-gold/40 bg-ivory px-4 py-3 text-deep-teal outline-none focus:border-gold"
+                className="w-full resize-y rounded-xl border border-olive/15 bg-cream px-4 py-3 text-deep-teal outline-none focus:border-burnt-orange/40"
               />
             </div>
 
@@ -102,7 +102,7 @@ export function ContactSection() {
         </FadeIn>
 
         <FadeIn delay={200}>
-          <div className="mt-10 border-t border-gold/30 pt-10 text-center">
+          <div className="mt-10 border-t border-olive/10 pt-10 text-center">
             <p className="mb-4 text-sm text-deep-teal/70">
               카카오톡으로도 문의하실 수 있습니다.
             </p>

@@ -8,7 +8,7 @@ export function RoomSection() {
     <section
       id="room"
       aria-labelledby="room-heading"
-      className="px-4 py-16 md:px-6 md:py-24"
+      className="bg-lavender-soft/25 px-4 py-16 md:px-6 md:py-24"
     >
       <div className="mx-auto max-w-6xl">
         <FadeIn>
@@ -23,7 +23,7 @@ export function RoomSection() {
           <div className="mb-10 space-y-3 text-center text-deep-teal/80">
             <p>개인 침실, 화장실, 샤워실 (본인 전용)</p>
             <p>주방 · 거실 공용 (윗층)</p>
-            <p className="font-headline text-sm tracking-wide text-gold uppercase">
+            <p className="font-headline text-sm text-burnt-orange">
               최소 · 최대 체류 4주
             </p>
           </div>

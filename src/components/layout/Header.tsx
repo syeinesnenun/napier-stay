@@ -33,14 +33,14 @@ export function Header() {
   }, [menuOpen]);
 
   return (
-    <header className="sticky top-0 z-50 bg-dark-teal">
+    <header className="sticky top-0 z-50 border-b border-olive/10 bg-cream/90 backdrop-blur-sm">
       <div
         ref={menuRef}
         className="relative mx-auto flex max-w-6xl items-center justify-between px-4 py-4 md:px-6"
       >
         <a
           href="#home"
-          className="font-headline text-lg tracking-[0.15em] text-ivory"
+          className="font-headline text-lg text-deep-teal"
           onClick={() => setMenuOpen(false)}
         >
           {siteConfig.name}
@@ -48,13 +48,13 @@ export function Header() {
 
         <button
           type="button"
-          className="flex items-center gap-2 rounded border border-gold/30 px-3 py-2 text-ivory transition-colors hover:border-gold/60"
+          className="flex items-center gap-2 rounded-full border border-olive/20 bg-ivory px-4 py-2 text-deep-teal transition-colors hover:border-burnt-orange/30 hover:bg-lavender-soft/30"
           aria-expanded={menuOpen}
           aria-controls="site-menu"
           aria-label={menuOpen ? "메뉴 닫기" : "메뉴 열기"}
           onClick={() => setMenuOpen((open) => !open)}
         >
-          <span className="text-sm tracking-wide">메뉴</span>
+          <span className="text-sm">메뉴</span>
           <svg
             width="20"
             height="20"
@@ -79,7 +79,7 @@ export function Header() {
         <nav
           id="site-menu"
           className={cn(
-            "absolute top-full right-4 left-4 mt-2 border border-gold/30 bg-dark-teal shadow-lg md:right-6 md:left-auto md:w-56",
+            "absolute top-full right-4 left-4 mt-2 overflow-hidden rounded-2xl border border-olive/10 bg-cream shadow-sm md:right-6 md:left-auto md:w-56",
             menuOpen ? "block" : "hidden",
           )}
           aria-label="사이트 메뉴"
@@ -90,10 +90,10 @@ export function Header() {
                 <a
                   href={item.href}
                   className={cn(
-                    "block px-4 py-3 text-sm tracking-wide transition-colors",
+                    "block px-4 py-3 text-sm transition-colors",
                     activeSection === item.href.slice(1)
-                      ? "bg-gold/10 text-gold"
-                      : "text-ivory/80 hover:bg-ivory/5 hover:text-ivory",
+                      ? "bg-lavender-soft/50 text-burnt-orange"
+                      : "text-deep-teal/80 hover:bg-lavender-soft/30 hover:text-deep-teal",
                   )}
                   aria-current={
                     activeSection === item.href.slice(1) ? "page" : undefined

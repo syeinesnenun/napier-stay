@@ -8,7 +8,7 @@ export function ThingsToDoSection() {
     <section
       id="things-to-do"
       aria-labelledby="things-to-do-heading"
-      className="px-4 py-16 md:px-6 md:py-24"
+      className="bg-lavender-soft/25 px-4 py-16 md:px-6 md:py-24"
     >
       <div className="mx-auto max-w-7xl">
         <FadeIn>

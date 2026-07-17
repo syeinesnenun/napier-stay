@@ -27,7 +27,7 @@ export function AreaSection() {
             </p>
             <p className="text-sm text-deep-teal/60">
               주변에서 즐길 수 있는 활동은 메뉴의{" "}
-              <a href="#things-to-do" className="text-gold underline-offset-2 hover:underline">
+              <a href="#things-to-do" className="text-burnt-orange underline-offset-2 hover:underline">
                 할 거리
               </a>
               에서 확인하실 수 있습니다.

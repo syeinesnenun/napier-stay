@@ -25,23 +25,23 @@ export function SectionHeading({
     >
       <h2
         id={id}
-        className="font-headline text-3xl tracking-[0.15em] text-deep-teal uppercase md:text-4xl"
+        className="font-headline text-2xl leading-snug text-deep-teal md:text-3xl"
       >
         {title}
       </h2>
       <div
         className={cn(
-          "mt-4 flex items-center gap-2",
+          "mt-3 flex items-center gap-2",
           align === "center" ? "justify-center" : "justify-start",
         )}
         aria-hidden="true"
       >
-        <span className="h-px w-12 bg-gold" />
-        <span className="text-gold">◆</span>
-        <span className="h-px w-12 bg-gold" />
+        <span className="h-px w-8 bg-lavender/50" />
+        <span className="h-1.5 w-1.5 rounded-full bg-burnt-orange/70" />
+        <span className="h-px w-8 bg-lavender/50" />
       </div>
       {subtitle ? (
-        <p className="mx-auto mt-4 max-w-2xl text-base text-deep-teal/80 md:text-lg">
+        <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-deep-teal/75 md:text-lg">
           {subtitle}
         </p>
       ) : null}

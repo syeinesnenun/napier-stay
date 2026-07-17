@@ -17,21 +17,21 @@ export function PriceSection() {
         <FadeIn>
           <SectionHeading
             id="price-heading"
-            title="Price"
+            title="요금"
             subtitle="4주 기준 요금 안내입니다."
           />
         </FadeIn>
 
         <FadeIn delay={100}>
-          <div className="border border-gold/40 bg-ivory/60 p-8 text-center">
-            <p className="font-headline text-4xl tracking-wide text-deep-teal md:text-5xl">
+          <div className="rounded-2xl border border-olive/10 bg-cream p-8 text-center shadow-sm">
+            <p className="font-headline text-3xl text-deep-teal md:text-4xl">
               {price.currency} ${price.weekly}
               <span className="text-lg text-deep-teal/70"> / week</span>
             </p>
             <p className="mt-1 text-base text-deep-teal/60">
               ({formatApproxKrw(price.weekly, price.nzdToKrwRate)})
             </p>
-            <p className="mt-4 text-deep-teal/70">
+            <p className="mt-4 text-deep-teal/75">
               4주 기준 약 {price.currency} $
               {price.fourWeeks.toLocaleString()}{" "}
               <span className="text-deep-teal/60">
@@ -47,14 +47,14 @@ export function PriceSection() {
 
         <FadeIn delay={200}>
           <div className="mt-10">
-            <h3 className="font-headline text-sm tracking-[0.2em] text-gold uppercase">
+            <h3 className="font-headline text-base text-burnt-orange">
               포함 내역
             </h3>
-            <ul className="mt-4 space-y-2 text-deep-teal/80">
+            <ul className="mt-4 space-y-2 text-deep-teal/75">
               {priceIncludes.map((item) => (
                 <li key={item} className="flex items-start gap-2">
-                  <span className="text-gold" aria-hidden="true">
-                    ◆
+                  <span className="text-lavender" aria-hidden="true">
+                    ·
                   </span>
                   {item}
                 </li>

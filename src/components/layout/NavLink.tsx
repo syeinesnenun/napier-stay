@@ -15,15 +15,15 @@ export function NavLink({ href, label, isActive, onClick }: NavLinkProps) {
       href={href}
       onClick={onClick}
       className={cn(
-        "relative px-2 py-1 text-sm tracking-wide transition-colors",
-        isActive ? "text-gold" : "text-ivory/80 hover:text-ivory",
+        "relative px-2 py-1 text-sm transition-colors",
+        isActive ? "text-burnt-orange" : "text-deep-teal/80 hover:text-deep-teal",
       )}
       aria-current={isActive ? "page" : undefined}
     >
       {label}
       {isActive ? (
         <span
-          className="absolute -bottom-1 left-0 h-px w-full bg-gold"
+          className="absolute -bottom-1 left-0 h-px w-full bg-burnt-orange/60"
           aria-hidden="true"
         />
       ) : null}
