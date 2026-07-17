@@ -5,6 +5,7 @@ export type NavItem = {
 
 export const navigation: NavItem[] = [
   { label: "홈", href: "#home" },
+  { label: "궁금하신 점", href: "#concerns" },
   { label: "호스트", href: "#host" },
   { label: "방", href: "#room" },
   { label: "네이피어", href: "#area" },

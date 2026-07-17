@@ -2,6 +2,7 @@ import { ChevronDivider } from "@/components/ui/ChevronDivider";
 import { AreaSection } from "@/components/sections/AreaSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { FaqSection } from "@/components/sections/FaqSection";
+import { ConcernsSection } from "@/components/sections/ConcernsSection";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { HostSection } from "@/components/sections/HostSection";
 import { PriceSection } from "@/components/sections/PriceSection";
@@ -14,6 +15,8 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
+      <ChevronDivider />
+      <ConcernsSection />
       <ChevronDivider />
       <HostSection />
       <ChevronDivider />
