@@ -1,5 +1,4 @@
-import { services } from "@/data/services";
-import { Card } from "@/components/ui/Card";
+import { includedItemsNote, priceIncludes } from "@/data/services";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
@@ -10,22 +9,33 @@ export function ServicesSection() {
       aria-labelledby="services-heading"
       className="bg-olive-wash px-4 py-16 md:px-6 md:py-24"
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-3xl">
         <FadeIn>
           <SectionHeading
             id="services-heading"
             title="Services"
-            subtitle="엄마와 아이의 하루를 돕는 맞춤 서비스입니다."
+            subtitle="숙소 이용 시 포함되는 서비스입니다."
           />
         </FadeIn>
 
-        <div className="grid gap-6 sm:grid-cols-2">
-          {services.map((service, index) => (
-            <FadeIn key={service.id} delay={index * 80}>
-              <Card title={service.title} description={service.description} />
-            </FadeIn>
-          ))}
-        </div>
+        <FadeIn delay={100}>
+          <div className="vintage-card rounded-xl border p-6 md:p-8">
+            <h3 className="font-headline text-base text-burnt-orange">
+              포함 내역
+            </h3>
+            <ul className="mt-4 space-y-3 text-deep-teal/75">
+              {priceIncludes.map((item) => (
+                <li key={item} className="flex items-start gap-2">
+                  <span className="text-lavender" aria-hidden="true">
+                    ·
+                  </span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-6 text-sm text-deep-teal/60">{includedItemsNote}</p>
+          </div>
+        </FadeIn>
       </div>
     </section>
   );

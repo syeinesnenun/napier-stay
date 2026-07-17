@@ -1,4 +1,4 @@
-import { priceIncludes } from "@/data/services";
+import { includedItemsNote, priceIncludes } from "@/data/services";
 import { siteConfig } from "@/data/site";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -65,9 +65,7 @@ export function PriceSection() {
                 </li>
               ))}
             </ul>
-            <p className="mt-6 text-sm text-deep-teal/60">
-              범위를 초과하는 요청은 별도 협의 가능합니다.
-            </p>
+            <p className="mt-6 text-sm text-deep-teal/60">{includedItemsNote}</p>
           </div>
         </FadeIn>
       </div>
