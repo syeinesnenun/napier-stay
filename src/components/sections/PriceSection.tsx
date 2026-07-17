@@ -24,19 +24,19 @@ export function PriceSection() {
 
         <FadeIn delay={100}>
           <div className="rounded-2xl border border-olive/10 bg-cream p-8 text-center shadow-sm">
-            <p className="font-headline text-3xl text-deep-teal md:text-4xl">
-              {price.currency} ${price.weekly}
-              <span className="text-lg text-deep-teal/70"> / week</span>
+            <p className="text-sm text-deep-teal/60">4주 기준</p>
+            <p className="mt-3 font-headline text-2xl text-deep-teal/45 line-through decoration-deep-teal/50 md:text-3xl">
+              {price.currency} ${price.regularFourWeeks.toLocaleString()}
+              <span className="ml-2 text-base no-underline">✕</span>
+            </p>
+            <p className="mt-2 text-sm font-medium text-burnt-orange">
+              올해 한정 특별가
+            </p>
+            <p className="mt-1 font-headline text-3xl text-deep-teal md:text-4xl">
+              {price.currency} ${price.fourWeeks.toLocaleString()}
             </p>
             <p className="mt-1 text-base text-deep-teal/60">
-              ({formatApproxKrw(price.weekly, price.nzdToKrwRate)})
-            </p>
-            <p className="mt-4 text-deep-teal/75">
-              4주 기준 약 {price.currency} $
-              {price.fourWeeks.toLocaleString()}{" "}
-              <span className="text-deep-teal/60">
-                ({formatApproxKrw(price.fourWeeks, price.nzdToKrwRate)})
-              </span>
+              ({formatApproxKrw(price.fourWeeks, price.nzdToKrwRate)})
             </p>
             <p className="mt-4 text-sm text-deep-teal/50">
               한화 금액은 참고용이며, 실제 결제 시점의 환율에 따라 달라질 수
