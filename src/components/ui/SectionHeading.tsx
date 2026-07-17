@@ -36,9 +36,9 @@ export function SectionHeading({
         )}
         aria-hidden="true"
       >
-        <span className="h-px w-8 bg-lavender/50" />
-        <span className="h-1.5 w-1.5 rounded-full bg-burnt-orange/70" />
-        <span className="h-px w-8 bg-lavender/50" />
+        <span className="h-px w-8 bg-burnt-orange/35" />
+        <span className="h-1.5 w-1.5 rounded-full bg-warm-brown/70" />
+        <span className="h-px w-8 bg-burnt-orange/35" />
       </div>
       {subtitle ? (
         <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-deep-teal/75 md:text-lg">

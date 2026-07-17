@@ -26,7 +26,7 @@ export function MomActivitiesSection() {
           </p>
         </FadeIn>
 
-        <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-6">
+        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
           {momActivities.map((activity, index) => (
             <FadeIn key={activity.id} delay={index * 60}>
               <ActivityCard

@@ -8,6 +8,7 @@ type ImagePlaceholderProps = {
   aspectRatio?: "square" | "4/3" | "16/9" | "3/4";
   className?: string;
   priority?: boolean;
+  vintage?: boolean;
 };
 
 const aspectClasses = {
@@ -24,13 +25,15 @@ export function ImagePlaceholder({
   aspectRatio = "4/3",
   className,
   priority = false,
+  vintage = false,
 }: ImagePlaceholderProps) {
   if (src) {
     return (
       <div
         className={cn(
-          "relative overflow-hidden rounded-xl border border-olive/10",
+          "relative w-full overflow-hidden bg-warm-brown/10",
           aspectClasses[aspectRatio],
+          vintage && "vintage-photo",
           className,
         )}
       >
@@ -39,7 +42,7 @@ export function ImagePlaceholder({
           alt={alt}
           fill
           className="object-cover"
-          sizes="(max-width: 768px) 100vw, 33vw"
+          sizes="(max-width: 768px) 50vw, 25vw"
           priority={priority}
         />
       </div>
@@ -49,7 +52,7 @@ export function ImagePlaceholder({
   return (
     <div
       className={cn(
-        "relative flex items-center justify-center overflow-hidden rounded-xl border border-olive/10 bg-lavender-soft/40",
+        "relative flex w-full items-center justify-center overflow-hidden border border-warm-brown/20 bg-paper/60",
         aspectClasses[aspectRatio],
         className,
       )}

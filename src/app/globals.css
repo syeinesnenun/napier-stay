@@ -1,29 +1,30 @@
 @import "tailwindcss";
 
 :root {
-  --background: #e8e4d8;
-  --foreground: #4a5240;
+  --background: #b89a78;
+  --foreground: #3a3428;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-ivory: #faf6f0;
-  --color-cream: #fffbf6;
-  --color-deep-teal: #5a6347;
-  --color-olive: #5a6347;
-  --color-olive-light: #6b7458;
-  --color-gold: #c46a42;
-  --color-coral: #c46a42;
-  --color-burnt-orange: #c46a42;
-  --color-lavender: #b8a4cc;
-  --color-lavender-soft: #e8e0f0;
-  --color-orange-wash: #f0e0d2;
-  --color-olive-wash: #e2e9d8;
-  --color-orange-soft: #e8d4c4;
-  --color-olive-soft: #d4ddc8;
-  --color-dark-teal: #4a5240;
-  --color-warm-brown: #6b5344;
+  --color-ivory: #e8dcc8;
+  --color-cream: #ede0c8;
+  --color-paper: #f2e6d2;
+  --color-deep-teal: #3a3428;
+  --color-olive: #4a5240;
+  --color-olive-light: #5c6348;
+  --color-gold: #b85c32;
+  --color-coral: #b85c32;
+  --color-burnt-orange: #b85c32;
+  --color-lavender: #9a8aad;
+  --color-lavender-soft: #d8cede;
+  --color-orange-wash: #c9926a;
+  --color-olive-wash: #8f9a78;
+  --color-orange-soft: #c08050;
+  --color-olive-soft: #7a8568;
+  --color-dark-teal: #3a3428;
+  --color-warm-brown: #6b4f3a;
   --font-headline: var(--font-gowun);
   --font-body: var(--font-noto-sans);
 }
@@ -41,34 +42,62 @@ html {
 body {
   color: var(--foreground);
   font-family: var(--font-noto-sans), sans-serif;
-  background-color: #e6e2d6;
+  background-color: #a88868;
   background-image:
     radial-gradient(
       ellipse 90% 60% at 10% 0%,
-      rgba(196, 106, 66, 0.22),
+      rgba(184, 92, 50, 0.55),
       transparent 55%
     ),
     radial-gradient(
       ellipse 85% 55% at 95% 100%,
-      rgba(90, 99, 71, 0.26),
+      rgba(74, 82, 64, 0.62),
       transparent 50%
     ),
     radial-gradient(
       ellipse 70% 50% at 50% 45%,
-      rgba(196, 106, 66, 0.1),
+      rgba(160, 100, 60, 0.28),
       transparent 60%
     ),
     linear-gradient(
       180deg,
-      #f2e4d8 0%,
-      #ebe3d6 35%,
-      #e4ead8 65%,
-      #e8dfd4 100%
+      #c9926a 0%,
+      #b89a78 35%,
+      #8f9a78 65%,
+      #b08058 100%
     );
   background-attachment: fixed;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.14;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+  z-index: 0;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+.vintage-photo img {
+  filter: sepia(0.42) contrast(1.08) brightness(0.92) saturate(0.82);
+}
+
+.vintage-card {
+  border-color: rgb(107 79 58 / 0.28);
+  background-color: rgb(242 230 210 / 0.92);
+  box-shadow:
+    inset 0 1px 0 rgb(255 248 240 / 0.5),
+    0 2px 8px rgb(58 52 40 / 0.08);
+}
+
 :focus-visible {
-  outline: 2px solid #c46a42;
+  outline: 2px solid #b85c32;
   outline-offset: 2px;
 }

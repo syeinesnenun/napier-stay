@@ -19,7 +19,7 @@ export function ActivityCard({
   return (
     <article
       className={cn(
-        "flex h-full flex-col overflow-hidden rounded-2xl border border-olive/10 bg-cream shadow-sm transition-colors hover:border-lavender/40",
+        "vintage-card flex h-full w-full flex-col overflow-hidden rounded-xl border transition-colors hover:border-burnt-orange/35",
         className,
       )}
     >
@@ -28,14 +28,15 @@ export function ActivityCard({
         alt={alt}
         label={title}
         aspectRatio="4/3"
-        className="border-0 rounded-none"
+        vintage
+        className="w-full shrink-0 rounded-none border-0 border-b border-warm-brown/15"
       />
-      <div className="flex flex-1 flex-col p-5">
+      <div className="flex flex-1 flex-col p-4 md:p-5">
         <h3 className="font-headline text-sm leading-snug text-deep-teal md:text-base">
           {title}
         </h3>
-        <div className="mt-2 h-px w-8 bg-lavender/50" aria-hidden="true" />
-        <p className="mt-3 text-sm leading-relaxed text-deep-teal/75">
+        <div className="mt-2 h-px w-8 bg-burnt-orange/40" aria-hidden="true" />
+        <p className="mt-3 text-sm leading-relaxed text-deep-teal/80">
           {description}
         </p>
       </div>

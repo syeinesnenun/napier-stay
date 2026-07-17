@@ -27,7 +27,7 @@ export function ThingsToDoSection() {
 
         <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
           {activities.map((activity, index) => (
-            <FadeIn key={activity.id} delay={index * 60}>
+            <FadeIn key={activity.id} delay={index * 60} className="h-full">
               <ActivityCard
                 title={activity.title}
                 description={activity.description}
