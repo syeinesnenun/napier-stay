@@ -87,10 +87,10 @@ export const activities: Activity[] = [
     src: "/activities/surfing-lesson.jpg",
   },
   {
-    id: "kayaking-lesson",
-    title: "카야킹 레슨 (Napier Pandora Pond)",
+    id: "kayaking-rental",
+    title: "카야킹 (Napier Pandora Pond)",
     description:
-      "Pandora Pond에서 즐기는 카야킹 레슨. The Shack. 여름 시즌 한정.",
+      "Pandora Pond에서 카야크를 대여해 직접 즐기기. The Shack. 여름 시즌 한정.",
     alt: "Napier Ahuriri Estuary와 Pandora Pond 전경",
     src: "/activities/kayaking-lesson.jpg",
   },
