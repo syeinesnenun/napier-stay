@@ -26,7 +26,7 @@
   --color-dark-teal: #3a3428;
   --color-warm-brown: #6b4f3a;
   --font-headline: var(--font-gowun);
-  --font-body: var(--font-noto-sans);
+  --font-body: var(--font-gowun);
 }
 
 html {
@@ -41,7 +41,7 @@ html {
 
 body {
   color: var(--foreground);
-  font-family: var(--font-noto-sans), sans-serif;
+  font-family: var(--font-gowun), serif;
   background-color: #e6e0d4;
   background-image:
     radial-gradient(

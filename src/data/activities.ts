@@ -78,4 +78,20 @@ export const activities: Activity[] = [
     alt: "Napier Urban Farmers' Market",
     src: "/activities/farmers-market.jpg",
   },
+  {
+    id: "surfing-lesson",
+    title: "서핑 레슨 (Waimarama 해변)",
+    description:
+      "Waimarama 해변에서 즐기는 서핑 레슨. Hawkes Bay Surf School. 여름 시즌 한정.",
+    alt: "Waimarama 해변과 바다 전경",
+    src: "/activities/surfing-lesson.jpg",
+  },
+  {
+    id: "kayaking-lesson",
+    title: "카야킹 레슨 (Napier Pandora Pond)",
+    description:
+      "Pandora Pond에서 즐기는 카야킹 레슨. The Shack. 여름 시즌 한정.",
+    alt: "Napier Ahuriri Estuary와 Pandora Pond 전경",
+    src: "/activities/kayaking-lesson.jpg",
+  },
 ];
