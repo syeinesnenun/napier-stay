@@ -4,6 +4,7 @@ export type Activity = {
   description: string;
   alt: string;
   src?: string;
+  summerOnly?: boolean;
 };
 
 export const activities: Activity[] = [
@@ -53,9 +54,10 @@ export const activities: Activity[] = [
   {
     id: "splash-planet",
     title: "Splash Planet",
-    description: "워터파크. 여름 시즌 한정.",
+    description: "워터파크.",
     alt: "Splash Planet 워터파크",
     src: "/activities/splash-planet.jpg",
+    summerOnly: true,
   },
   {
     id: "sunken-gardens",
@@ -82,16 +84,18 @@ export const activities: Activity[] = [
     id: "surfing-lesson",
     title: "서핑 레슨 (Waimarama 해변)",
     description:
-      "Waimarama 해변에서 즐기는 서핑 레슨. Hawkes Bay Surf School. 여름 시즌 한정.",
+      "Waimarama 해변에서 즐기는 서핑 레슨. Hawkes Bay Surf School.",
     alt: "Waimarama 해변과 바다 전경",
     src: "/activities/surfing-lesson.jpg",
+    summerOnly: true,
   },
   {
     id: "kayaking-rental",
     title: "카야킹 (Napier Pandora Pond)",
     description:
-      "Pandora Pond에서 카야크를 대여해 직접 즐기기. The Shack. 여름 시즌 한정.",
+      "Pandora Pond에서 카야크를 대여해 직접 즐기기. The Shack.",
     alt: "Napier Ahuriri Estuary와 Pandora Pond 전경",
     src: "/activities/kayaking-lesson.jpg",
+    summerOnly: true,
   },
 ];

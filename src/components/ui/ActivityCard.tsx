@@ -1,4 +1,5 @@
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
+import { SummerSunIcon } from "@/components/ui/SummerSunIcon";
 import { cn } from "@/lib/cn";
 
 type ActivityCardProps = {
@@ -6,6 +7,7 @@ type ActivityCardProps = {
   description: string;
   alt: string;
   src?: string;
+  summerOnly?: boolean;
   className?: string;
 };
 
@@ -14,6 +16,7 @@ export function ActivityCard({
   description,
   alt,
   src,
+  summerOnly = false,
   className,
 }: ActivityCardProps) {
   return (
@@ -39,6 +42,12 @@ export function ActivityCard({
         <p className="mt-3 text-sm leading-relaxed text-deep-teal/80">
           {description}
         </p>
+        {summerOnly ? (
+          <p className="mt-2 inline-flex items-center gap-1 text-xs text-burnt-orange">
+            <SummerSunIcon className="h-3.5 w-3.5" />
+            <span>여름 시즌 한정</span>
+          </p>
+        ) : null}
       </div>
     </article>
   );

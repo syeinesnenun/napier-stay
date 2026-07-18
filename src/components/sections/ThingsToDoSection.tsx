@@ -33,6 +33,7 @@ export function ThingsToDoSection() {
                 description={activity.description}
                 alt={activity.alt}
                 src={activity.src}
+                summerOnly={activity.summerOnly}
               />
             </FadeIn>
           ))}
