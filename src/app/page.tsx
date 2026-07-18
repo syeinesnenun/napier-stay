@@ -22,15 +22,15 @@ export default function Home() {
       <ChevronDivider />
       <RoomSection />
       <ChevronDivider />
+      <ServicesSection />
+      <ChevronDivider />
+      <PriceSection />
+      <ChevronDivider />
       <AreaSection />
       <ChevronDivider />
       <ThingsToDoSection />
       <ChevronDivider />
       <MomActivitiesSection />
-      <ChevronDivider />
-      <ServicesSection />
-      <ChevronDivider />
-      <PriceSection />
       <ChevronDivider />
       <FaqSection />
       <ChevronDivider />

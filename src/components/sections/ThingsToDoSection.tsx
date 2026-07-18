@@ -14,7 +14,7 @@ export function ThingsToDoSection() {
         <FadeIn>
           <SectionHeading
             id="things-to-do-heading"
-            title="할 거리"
+            title="아이와 함께 할 것들"
             subtitle="네이피어에서 어린이와 함께하기 좋은 활동"
           />
         </FadeIn>

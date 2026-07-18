@@ -85,7 +85,7 @@ export function Header() {
             <div className="mx-auto flex max-w-6xl justify-end px-4 pb-3 md:px-6">
               <nav
                 id="site-menu"
-                className="w-56 overflow-hidden rounded-2xl border border-warm-brown/25 bg-paper shadow-lg"
+                className="w-64 overflow-hidden rounded-2xl border border-warm-brown/25 bg-paper shadow-lg"
                 aria-label="사이트 메뉴"
               >
                 <ul className="flex flex-col py-2">
@@ -94,7 +94,7 @@ export function Header() {
                       <a
                         href={item.href}
                         className={cn(
-                          "block px-4 py-3 text-sm transition-colors",
+                          "block px-4 py-2.5 text-sm leading-snug transition-colors",
                           activeSection === item.href.slice(1)
                             ? "bg-lavender-soft/50 text-burnt-orange"
                             : "text-deep-teal/80 hover:bg-lavender-soft/30 hover:text-deep-teal",

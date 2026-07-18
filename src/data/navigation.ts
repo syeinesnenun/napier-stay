@@ -8,13 +8,12 @@ export const navigation: NavItem[] = [
   { label: "궁금하신 점", href: "#concerns" },
   { label: "호스트", href: "#host" },
   { label: "방", href: "#room" },
-  { label: "네이피어", href: "#area" },
-  { label: "할 거리", href: "#things-to-do" },
-  { label: "엄마를 위한 활동", href: "#mom-activities" },
   { label: "서비스", href: "#services" },
   { label: "요금", href: "#price" },
-  { label: "자주 묻는 질문", href: "#faq" },
-  { label: "문의", href: "#contact" },
+  { label: "네이피어", href: "#area" },
+  { label: "아이와 함께 할 것들", href: "#things-to-do" },
+  { label: "엄마를 위한 활동", href: "#mom-activities" },
+  { label: "FAQ", href: "#faq" },
 ];
 
 export const sectionIds = navigation.map((item) => item.href.slice(1));
