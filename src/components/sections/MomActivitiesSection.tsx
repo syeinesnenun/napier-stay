@@ -22,11 +22,12 @@ export function MomActivitiesSection() {
         <FadeIn delay={100}>
           <p className="mx-auto mb-12 max-w-3xl text-center text-deep-teal/80">
             평일 하루 개인 외출 시간에 다녀오기 좋은 곳입니다. 와이너리·카페
-            투어 등 호스트가 기본 정보를 안내해 드립니다.
+            투어, 마사지, 요가·필라테스 클래스 등 호스트가 기본 정보를 안내해
+            드립니다.
           </p>
         </FadeIn>
 
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
+        <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-6">
           {momActivities.map((activity, index) => (
             <FadeIn key={activity.id} delay={index * 60}>
               <ActivityCard
